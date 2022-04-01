@@ -29,6 +29,21 @@ docker run -it terraforming:1.0 sh
 ```
 
 
+Installed Tools in image
+- terraform
+- terraforming
+- aws
+
+
+## Usage
+
+Show help
+```
+terraforming
+```
+
+
+
 
 
 
