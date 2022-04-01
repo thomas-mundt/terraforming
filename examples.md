@@ -110,6 +110,31 @@ export AWS_SESSION_TOKEN="XXXXX"
 Create Terraform code for all EC2 instances
 ```
 terraforming ec2
+
+resource "aws_instance" "terraforming-prod" {
+    ami                         = "ami-0358b49d14747474"
+    availability_zone           = "eu-central-1b"
+    ebs_optimized               = true
+    instance_type               = "t3a.medium"
+    monitoring                  = false
+    key_name                    = ""
+    subnet_id                   = "subnet-xxxxxxxxxx"
+    vpc_security_group_ids      = ["sg-xxxxxxxxxxxx"]
+    associate_public_ip_address = true
+    private_ip                  = "192.168.130.100"
+    source_dest_check           = true
+
+    root_block_device {
+        volume_type           = "gp2"
+        volume_size           = 200
+        delete_on_termination = true
+    }
+
+    tags {
+        "Name" = "terraforming-prod"
+   
+    }
+}
 ```
 
 
