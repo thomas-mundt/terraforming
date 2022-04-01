@@ -7,6 +7,7 @@ vi Dockerfile
 FROM ruby:alpine3.15
 
 WORKDIR /usr/src/app/
+ENV AWS_REGION=eu-central-1
 
 RUN apk --update add --no-cache --virtual run-dependencies \
         terraform \
