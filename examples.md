@@ -16,10 +16,12 @@ RUN apk --update add --no-cache --virtual run-dependencies \
 RUN gem install terraforming
 ```
 
+
 Build image
 ```
 docker build -t terraforming:1.0 .
 ```
+
 
 Run Image
 ```
