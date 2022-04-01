@@ -9,7 +9,8 @@ FROM ruby:alpine3.15
 WORKDIR /usr/src/app/
 
 RUN apk --update add --no-cache --virtual run-dependencies \
-        terraform
+        terraform \
+        aws-cli
 
 RUN gem install terraforming
 ```
