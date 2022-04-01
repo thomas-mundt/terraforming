@@ -25,7 +25,7 @@ docker build -t terraforming:1.0 .
 
 Run Image
 ```
-docker run -it terraforming:1.0 sh
+docker run -it --rm terraforming:1.0 sh
 ```
 
 
