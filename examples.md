@@ -100,6 +100,20 @@ Options:
 
 
 
+Configure AWS credentials
+```
+export AWS_ACCESS_KEY_ID="XXXXX"
+export AWS_SECRET_ACCESS_KEY="XXXXX"
+export AWS_SESSION_TOKEN="XXXXX"
+```
+
+Create Terraform code for all EC2 instances
+```
+terraforming ec2
+```
+
+
+
 
 
 
